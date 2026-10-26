@@ -1,16 +1,14 @@
-<div align="center">
+<h1 align="justify">IoT Based Car Parking System with Automated Gate Control</h1>
 
-# IoT Based Car Parking System with Automated Gate Control
-
-<img src="smart-parking-full-view.jpg" alt="Smart parking full view" width="480">
-
-</div>
+<p align="justify">
+<img src="smart-parking-full-view.jpg" alt="Smart parking full view" width="600">
+</p>
 
 <p align="justify">
 An ESP32 based IoT smart parking prototype with 4 slots and one automated gate. It validates every vehicle against an actual gate crossing, so it can tell a legitimately parked car from an object placed directly in a slot. Status is shown on an OLED display and on a web dashboard hosted by the ESP32. The ESP32 connects to WiFi in STA mode for IoT access and automatically falls back to its own Access Point (AP) mode if the connection fails, so the dashboard is always reachable.
 </p>
 
-[Features](#features) | [System Overview](#system-overview) | [Components](#components) | [Pin Configuration](#pin-configuration) | [How It Works](#how-it-works) | [Demo](#demo-video) | [Setup](#setup) | [Gallery](#gallery) | [Dashboard](#web-dashboard) | [Author](#author)
+[Features](#features) | [System Overview](#system-overview) | [Components](#components) | [Pin Configuration](#pin-configuration) | [How It Works](#how-it-works) | [Demo Video](#demo-video) | [Setup](#setup) | [Gallery](#gallery) | [Web Dashboard](#web-dashboard) | [Author](#author)
 
 ## Features
 - **Fully IoT based:** ESP32 connects to WiFi (STA mode) and serves the web dashboard
@@ -26,15 +24,7 @@ An ESP32 based IoT smart parking prototype with 4 slots and one automated gate. 
 - **Recent activity log** with relative timestamps
 
 ## System Overview
-| Inputs | Controller | Outputs |
-|:---:|:---:|:---:|
-| IR sensors (Slot 1 to 4) | **ESP32** | Servo motor (gate barrier) |
-| IR sensor (inner gate) | Main controller | OLED display |
-| Ultrasonic sensor (outer gate) | WiFi STA / AP + OTA | Buzzer and LED indicators |
-
-<p align="center">
-Power supply feeds the ESP32. The web dashboard (phone or laptop) connects to the ESP32 over WiFi.
-</p>
+<img src="block-diagram.svg" alt="System block diagram" width="100%">
 
 ## Components
 | Component | Qty | Purpose |
@@ -102,7 +92,9 @@ A slot occupied without a validated entry, or a Reserved/Maintenance slot being 
 </details>
 
 ## Test Results
+<p align="justify">
 All 7 test cases passed: entry, exit, illegal entry, silent removal after illegal entry, parking full, manual gate control, and reserved slot violation.
+</p>
 
 ## Demo Video
 [Watch the demo here](YOUR_VIDEO_LINK)
