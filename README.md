@@ -6,9 +6,14 @@
 
 
 
-An ESP32 based smart parking prototype with 4 slots and one automated gate. It validates every vehicle against an actual gate crossing, so it can tell a legitimately parked car from an object placed directly in a slot. Status is shown on an OLED display and on a local web dashboard hosted by the ESP32 itself (no internet needed).
+<p align="justify">
+An ESP32 based IoT smart parking prototype with 4 slots and one automated gate. It validates every vehicle against an actual gate crossing, so it can tell a legitimately parked car from an object placed directly in a slot. Status is shown on an OLED display and on a web dashboard hosted by the ESP32. The ESP32 connects to WiFi in STA mode for IoT access, and automatically falls back to its own Access Point (AP) mode if the connection fails, so the dashboard is always reachable.
+</p>
 
 ## Features
+- Fully IoT based: ESP32 connects to WiFi (STA mode) and serves the web dashboard
+- Dual WiFi mode: STA and AP, each acts as a backup if the other fails
+- OTA (Over-The-Air) firmware update, no USB cable needed after the first upload
 - Automatic gate open/close with ultrasonic sensor and SG90 servo
 - 4 slots monitored by IR sensors
 - Validated entry counting (availability comes from verified entries, not raw sensor readings)
@@ -16,7 +21,6 @@ An ESP32 based smart parking prototype with 4 slots and one automated gate. It v
 - Reserved and Maintenance slot modes from the dashboard
 - Left/Right LED indicators show the direction to the assigned slot
 - Live OLED screens: home, system info, welcome, exiting, illegal entry, parking full
-- Local web dashboard in WiFi Access Point mode (192.168.4.1)
 - Manual gate control with automatic return to auto mode after a timeout
 - Recent activity log with relative timestamps
 - Battery powered (3S Li-ion) with power switch
@@ -24,7 +28,7 @@ An ESP32 based smart parking prototype with 4 slots and one automated gate. It v
 ## Components
 | Component | Qty | Purpose |
 |---|---|---|
-| ESP32 development board | 1 | Main controller + WiFi AP |
+| ESP32 development board | 1 | Main controller + WiFi |
 | IR sensor module | 5 | 4 slot sensors + inner gate sensor |
 | HC-SR04 ultrasonic sensor | 1 | Outer gate vehicle detection |
 | SG90 servo motor | 1 | Gate barrier |
@@ -62,11 +66,14 @@ Estimated prototype cost: about 2756 BDT.
 3. The count decreases after the car crosses the outer sensor, then the gate closes.
 
 **Illegal entry**
+
+<p align="justify">
 A slot occupied without a validated entry, or a Reserved/Maintenance slot being used, triggers the buzzer, OLED warning and a highlighted slot on the dashboard.
+</p>
 
 ## Software
 - Arduino IDE with ESP32 board package
-- Libraries: WiFi, WebServer, Wire, Adafruit_GFX, Adafruit_SSD1306, ESP32Servo, esp_task_wdt
+- Libraries: WiFi, WebServer, Wire, Adafruit_GFX, Adafruit_SSD1306, ESP32Servo, ArduinoOTA, esp_task_wdt
 - Gate state machine: IDLE, OPEN_WAIT, PASS_WAIT, CLOSING
 
 ## Key Design Decisions
@@ -74,19 +81,26 @@ A slot occupied without a validated entry, or a Reserved/Maintenance slot being 
 - Non-blocking, interrupt-driven ultrasonic reading keeps the web server responsive.
 - Debounce and grace periods filter sensor noise.
 - Servo signal detach timing removes motor jitter.
+- STA and AP dual mode keeps the dashboard reachable even if the WiFi network is unavailable.
+- OTA support allows firmware updates without opening the prototype.
 
 ## Test Results
+
+<p align="justify">
 All 7 test cases passed: entry, exit, illegal entry, silent removal after illegal entry, parking full, manual gate control, and reserved slot violation.
+</p>
 
 ## Limitations
 - One gate and 4 slots only
 - No license plate identification
-- Dashboard works only within ESP32 WiFi range (no cloud or remote access)
 - Activity log is lost on power reset
 - Thresholds are calibrated for this hardware
 
 ## Future Scope
+
+<p align="justify">
 Cloud logging, license plate recognition, mobile app, multiple gates, payment system.
+</p>
 
 ## Demo Video
 [Watch the demo here](YOUR_VIDEO_LINK)
@@ -94,9 +108,11 @@ Cloud logging, license plate recognition, mobile app, multiple gates, payment sy
 ## Setup
 1. Install Arduino IDE and add ESP32 board support.
 2. Install the libraries listed above.
-3. Upload the code to the ESP32.
-4. Connect your phone to the ESP32 WiFi network.
-5. Open 192.168.4.1 in a browser to use the dashboard.
+3. Add your own WiFi name and password in the code (not included here for security).
+4. Upload the code to the ESP32 over USB for the first time.
+5. After that, firmware can be updated wirelessly using OTA.
+6. **STA mode:** open the ESP32 IP address in a browser on the same WiFi network.
+7. **AP mode (fallback):** if the WiFi connection fails, connect your phone to the ESP32 WiFi network and open `192.168.4.1`.
 
 ## Gallery
 
@@ -150,5 +166,6 @@ Cloud logging, license plate recognition, mobile app, multiple gates, payment sy
 
 
 ## Author
-Md. Jewel Rana
-EEE, Daffodil International University
+Md. Jewel Rana<br>
+Electrical & Electronic Engineering<br>
+Daffodil International University
