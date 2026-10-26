@@ -111,29 +111,29 @@ All 7 test cases passed: entry, exit, illegal entry, silent removal after illega
 ## Gallery
 <table>
 <tr>
-<td align="center"><img src="parking-layout-overview.jpg" alt="Parking layout overview"><br><sub>Parking layout</sub></td>
-<td align="center"><img src="automated-gate-esp32.jpg" alt="Automated gate with ESP32"><br><sub>Gate with ESP32</sub></td>
+<td align="center"><img src="images/parking-layout-overview.jpg" alt="Parking layout overview"><br><sub>Parking layout</sub></td>
+<td align="center"><img src="images/automated-gate-esp32.jpg" alt="Automated gate with ESP32"><br><sub>Gate with ESP32</sub></td>
 </tr>
 <tr>
-<td align="center"><img src="barrier-gate-closeup.jpg" alt="Barrier gate close-up"><br><sub>Barrier gate close-up</sub></td>
-<td align="center"><img src="oled-slot-status-display.jpg" alt="OLED slot status display"><br><sub>OLED and slot sensors</sub></td>
+<td align="center"><img src="images/barrier-gate-closeup.jpg" alt="Barrier gate close-up"><br><sub>Barrier gate close-up</sub></td>
+<td align="center"><img src="images/oled-slot-status-display.jpg" alt="OLED slot status display"><br><sub>OLED and slot sensors</sub></td>
 </tr>
 </table>
 
 ### Circuit
 <table>
 <tr>
-<td align="center"><img src="esp32-servo-circuit.jpg" alt="ESP32 and servo circuit"><br><sub>ESP32 and servo</sub></td>
-<td align="center"><img src="ultrasonic-sensor-gate.jpg" alt="Ultrasonic sensor at gate"><br><sub>Ultrasonic sensor</sub></td>
-<td align="center"><img src="buzzer-ir-circuit.jpg" alt="Buzzer and IR circuit"><br><sub>Buzzer and IR</sub></td>
+<td align="center"><img src="images/esp32-servo-circuit.jpg" alt="ESP32 and servo circuit"><br><sub>ESP32 and servo</sub></td>
+<td align="center"><img src="images/ultrasonic-sensor-gate.jpg" alt="Ultrasonic sensor at gate"><br><sub>Ultrasonic sensor</sub></td>
+<td align="center"><img src="images/buzzer-ir-circuit.jpg" alt="Buzzer and IR circuit"><br><sub>Buzzer and IR</sub></td>
 </tr>
 </table>
 
 ## Web Dashboard
 <table>
 <tr>
-<td align="center"><img src="dashboard-all-slots-free.png" alt="Dashboard all slots free" width="300"><br><sub>All slots free</sub></td>
-<td align="center"><img src="dashboard-illegal-entry-alert.png" alt="Dashboard illegal entry alert" width="300"><br><sub>Illegal entry alert</sub></td>
+<td align="center"><img src="images/dashboard-all-slots-free.png" alt="Dashboard all slots free" width="300"><br><sub>All slots free</sub></td>
+<td align="center"><img src="images/dashboard-illegal-entry-alert.png" alt="Dashboard illegal entry alert" width="300"><br><sub>Illegal entry alert</sub></td>
 </tr>
 </table>
 
