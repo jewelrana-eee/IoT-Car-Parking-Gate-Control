@@ -150,6 +150,8 @@ All 7 test cases passed: entry, exit, illegal entry, silent removal after illega
 </details>
 
 ## Author
-**Md. Jewel Rana**<br>
-Electrical & Electronic Engineering<br>
+<p>
+<b>Md. Jewel Rana</b><br>
+Electrical &amp; Electronic Engineering<br>
 Daffodil International University
+</p>
