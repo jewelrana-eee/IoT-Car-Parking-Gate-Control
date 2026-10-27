@@ -1,4 +1,4 @@
-<h1 align="justify">IoT Based Car Parking System with Automated Gate Control</h1>
+   # IoT Based Car Parking System with Automated Gate Control
 
 <p align="center">
 <img src="images/smart-parking-full-view.jpg" alt="Smart parking full view" width="500">
