@@ -24,7 +24,9 @@ An ESP32 based IoT smart parking prototype with 4 slots and one automated gate. 
 - **Recent activity log** with relative timestamps
 
 ## System Overview
-<img src="block-diagram.svg" alt="System block diagram" width="100%">
+<p align="center">
+<img src="block-diagram.svg" alt="System block diagram" width="650">
+</p>
 
 ## Components
 | Component | Qty | Purpose |
@@ -111,21 +113,21 @@ All 7 test cases passed: entry, exit, illegal entry, silent removal after illega
 ## Gallery
 <table>
 <tr>
-<td align="center"><img src="images/parking-layout-overview.jpg" alt="Parking layout overview" height="240"><br><sub>Parking layout</sub></td>
-<td align="center"><img src="images/automated-gate-esp32.jpg" alt="Automated gate with ESP32" height="240"><br><sub>Gate with ESP32</sub></td>
+<td align="center"><img src="images/parking-layout-overview.jpg" alt="Parking layout overview" height="300"><br><sub>Parking layout</sub></td>
+<td align="center"><img src="images/automated-gate-esp32.jpg" alt="Automated gate with ESP32" height="300"><br><sub>Gate with ESP32</sub></td>
 </tr>
 <tr>
-<td align="center"><img src="images/barrier-gate-closeup.jpg" alt="Barrier gate close-up" height="240"><br><sub>Barrier gate close-up</sub></td>
-<td align="center"><img src="images/oled-slot-status-display.jpg" alt="OLED slot status display" height="240"><br><sub>OLED and slot sensors</sub></td>
+<td align="center"><img src="images/barrier-gate-closeup.jpg" alt="Barrier gate close-up" height="300"><br><sub>Barrier gate close-up</sub></td>
+<td align="center"><img src="images/oled-slot-status-display.jpg" alt="OLED slot status display" height="300"><br><sub>OLED and slot sensors</sub></td>
 </tr>
 </table>
 
 ### Circuit
 <table>
 <tr>
-<td align="center"><img src="images/esp32-servo-circuit.jpg" alt="ESP32 and servo circuit" height="150"><br><sub>ESP32 and servo</sub></td>
-<td align="center"><img src="images/ultrasonic-sensor-gate.jpg" alt="Ultrasonic sensor at gate" height="150"><br><sub>Ultrasonic sensor</sub></td>
-<td align="center"><img src="images/buzzer-ir-circuit.jpg" alt="Buzzer and IR circuit" height="150"><br><sub>Buzzer and IR</sub></td>
+<td align="center"><img src="images/esp32-servo-circuit.jpg" alt="ESP32 and servo circuit" height="200"><br><sub>ESP32 and servo</sub></td>
+<td align="center"><img src="images/ultrasonic-sensor-gate.jpg" alt="Ultrasonic sensor at gate" height="200"><br><sub>Ultrasonic sensor</sub></td>
+<td align="center"><img src="images/buzzer-ir-circuit.jpg" alt="Buzzer and IR circuit" height="200"><br><sub>Buzzer and IR</sub></td>
 </tr>
 </table>
 
