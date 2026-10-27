@@ -1,7 +1,7 @@
 <h1 align="justify">IoT Based Car Parking System with Automated Gate Control</h1>
 
-<p align="justify">
-<img src="images/smart-parking-full-view.jpg" alt="Smart parking full view" width="600">
+<p align="center">
+<img src="images/smart-parking-full-view.jpg" alt="Smart parking full view" width="500">
 </p>
 
 <p align="justify">
@@ -29,31 +29,37 @@ An ESP32 based IoT smart parking prototype with 4 slots and one automated gate. 
 </p>
 
 ## Components
-| Component | Qty | Purpose |
-|---|---|---|
-| ESP32 development board | 1 | Main controller + WiFi |
-| IR sensor module | 5 | 4 slot sensors + inner gate sensor |
-| HC-SR04 ultrasonic sensor | 1 | Outer gate vehicle detection |
-| SG90 servo motor | 1 | Gate barrier |
-| SSD1306 OLED display | 1 | Driver status screen |
-| Buzzer | 1 | Audible alerts |
-| LED | 2 | Left/Right direction indicators |
-| Buck converter | 1 | Voltage regulation |
-| 3S battery holder + Li-ion cells | 1 | Power supply |
-| Capacitors, breadboards, wires, PVC board | - | Circuit and model body |
+<div align="center">
+<table width="650">
+<tr><th align="left">Component</th><th>Qty</th><th align="left">Purpose</th></tr>
+<tr><td>ESP32 development board</td><td align="center">1</td><td>Main controller + WiFi</td></tr>
+<tr><td>IR sensor module</td><td align="center">5</td><td>4 slot sensors + inner gate sensor</td></tr>
+<tr><td>HC-SR04 ultrasonic sensor</td><td align="center">1</td><td>Outer gate vehicle detection</td></tr>
+<tr><td>SG90 servo motor</td><td align="center">1</td><td>Gate barrier</td></tr>
+<tr><td>SSD1306 OLED display</td><td align="center">1</td><td>Driver status screen</td></tr>
+<tr><td>Buzzer</td><td align="center">1</td><td>Audible alerts</td></tr>
+<tr><td>LED</td><td align="center">2</td><td>Left/Right direction indicators</td></tr>
+<tr><td>Buck converter</td><td align="center">1</td><td>Voltage regulation</td></tr>
+<tr><td>3S battery holder + Li-ion cells</td><td align="center">1</td><td>Power supply</td></tr>
+<tr><td>Capacitors, breadboards, wires, PVC board</td><td align="center">-</td><td>Circuit and model body</td></tr>
+</table>
+</div>
 
-Estimated prototype cost: about 2756 BDT.
+<p align="center">Estimated prototype cost: about 2756 BDT</p>
 
 ## Pin Configuration
-| Function | GPIO |
-|---|---|
-| Slot 1 / 2 / 3 / 4 IR | 34 / 35 / 33 / 25 |
-| Inner gate IR | 32 |
-| Ultrasonic TRIG / ECHO | 16 / 17 |
-| Gate servo | 27 |
-| OLED SDA / SCL | 21 / 22 |
-| Left / Right LED | 26 / 13 |
-| Buzzer | 23 |
+<div align="center">
+<table width="650">
+<tr><th align="left">Function</th><th align="left">GPIO</th></tr>
+<tr><td>Slot 1 / 2 / 3 / 4 IR</td><td>34 / 35 / 33 / 25</td></tr>
+<tr><td>Inner gate IR</td><td>32</td></tr>
+<tr><td>Ultrasonic TRIG / ECHO</td><td>16 / 17</td></tr>
+<tr><td>Gate servo</td><td>27</td></tr>
+<tr><td>OLED SDA / SCL</td><td>21 / 22</td></tr>
+<tr><td>Left / Right LED</td><td>26 / 13</td></tr>
+<tr><td>Buzzer</td><td>23</td></tr>
+</table>
+</div>
 
 ## How It Works
 **Entry**
@@ -111,6 +117,7 @@ All 7 test cases passed: entry, exit, illegal entry, silent removal after illega
 7. **AP mode (fallback):** if the WiFi connection fails, connect your phone to the ESP32 WiFi network and open `192.168.4.1`.
 
 ## Gallery
+<div align="center">
 <table>
 <tr>
 <td align="center"><img src="images/parking-layout-overview.jpg" alt="Parking layout overview" height="300"><br><sub>Parking layout</sub></td>
@@ -121,8 +128,10 @@ All 7 test cases passed: entry, exit, illegal entry, silent removal after illega
 <td align="center"><img src="images/oled-slot-status-display.jpg" alt="OLED slot status display" height="300"><br><sub>OLED and slot sensors</sub></td>
 </tr>
 </table>
+</div>
 
 ### Circuit
+<div align="center">
 <table>
 <tr>
 <td align="center"><img src="images/esp32-servo-circuit.jpg" alt="ESP32 and servo circuit" height="200"><br><sub>ESP32 and servo</sub></td>
@@ -130,14 +139,17 @@ All 7 test cases passed: entry, exit, illegal entry, silent removal after illega
 <td align="center"><img src="images/buzzer-ir-circuit.jpg" alt="Buzzer and IR circuit" height="200"><br><sub>Buzzer and IR</sub></td>
 </tr>
 </table>
+</div>
 
 ## Web Dashboard
+<div align="center">
 <table>
 <tr>
 <td align="center"><img src="images/dashboard-all-slots-free.png" alt="Dashboard all slots free" width="300"><br><sub>All slots free</sub></td>
 <td align="center"><img src="images/dashboard-illegal-entry-alert.png" alt="Dashboard illegal entry alert" width="300"><br><sub>Illegal entry alert</sub></td>
 </tr>
 </table>
+</div>
 
 <details>
 <summary><b>Limitations and future scope</b></summary>
