@@ -105,7 +105,7 @@ All 7 test cases passed: entry, exit, illegal entry, silent removal after illega
 </p>
 
 ## Demo Video
-[Watch the demo here](https://www.facebook.com/share/v/1E8hrRPL5B/)
+[Watch the demo here](https://youtu.be/0OySd1ujqDo?si=D1jraEN2lLzzpTo3)
 
 ## Setup
 1. Install Arduino IDE and add ESP32 board support.
