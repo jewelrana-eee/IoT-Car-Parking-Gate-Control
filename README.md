@@ -1,4 +1,4 @@
-   # IoT Based Car Parking System with Automated Gate Control
+# IoT Based Car Parking System with Automated Gate Control
 
 <p align="center">
 <img src="images/smart-parking-full-view.jpg" alt="Smart parking full view" width="500">
@@ -8,7 +8,7 @@
 An ESP32 based IoT smart parking prototype with 4 slots and one automated gate. It validates every vehicle against an actual gate crossing, so it can tell a legitimately parked car from an object placed directly in a slot. Status is shown on an OLED display and on a web dashboard hosted by the ESP32. The ESP32 connects to WiFi in STA mode for IoT access and automatically falls back to its own Access Point (AP) mode if the connection fails, so the dashboard is always reachable.
 </p>
 
-[Features](#features) | [System Overview](#system-overview) | [Components](#components) | [Pin Configuration](#pin-configuration) | [How It Works](#how-it-works) | [Demo Video](#demo-video) | [Setup](#setup) | [Gallery](#gallery) | [Web Dashboard](#web-dashboard) | [Author](#author)
+[Features](#features) | [System Overview](#system-overview) | [Components](#components) | [Circuit Diagram](#circuit-diagram) | [Pin Configuration](#pin-configuration) | [How It Works](#how-it-works) | [Demo Video](#demo-video) | [Setup](#setup) | [Gallery](#gallery) | [Web Dashboard](#web-dashboard) | [Author](#author)
 
 ## Features
 - **Fully IoT based:** ESP32 connects to WiFi (STA mode) and serves the web dashboard
@@ -25,7 +25,7 @@ An ESP32 based IoT smart parking prototype with 4 slots and one automated gate. 
 
 ## System Overview
 <p align="center">
-<img src="assets/block-diagram.svg" alt="System block diagram" width="650">
+<img src="block-diagram.svg" alt="System block diagram" width="650">
 </p>
 
 ## Components
@@ -46,6 +46,13 @@ An ESP32 based IoT smart parking prototype with 4 slots and one automated gate. 
 </div>
 
 <p align="center">Estimated prototype cost: about 2756 BDT</p>
+
+## Circuit Diagram
+<p align="center">
+<img src="images/circuit-diagram.png" alt="Circuit diagram (Proteus)" width="800">
+<br>
+<sub>Circuit diagram designed in Proteus</sub>
+</p>
 
 ## Pin Configuration
 <div align="center">
@@ -105,7 +112,7 @@ All 7 test cases passed: entry, exit, illegal entry, silent removal after illega
 </p>
 
 ## Demo Video
-[Watch the demo here](https://youtu.be/0OySd1ujqDo?si=D1jraEN2lLzzpTo3)
+[Watch the demo here](YOUR_VIDEO_LINK)
 
 ## Setup
 1. Install Arduino IDE and add ESP32 board support.
@@ -130,7 +137,7 @@ All 7 test cases passed: entry, exit, illegal entry, silent removal after illega
 </table>
 </div>
 
-### Circuit
+### Hardware Close-ups
 <div align="center">
 <table>
 <tr>
