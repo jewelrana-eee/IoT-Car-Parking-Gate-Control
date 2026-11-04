@@ -25,7 +25,7 @@ An ESP32 based IoT smart parking prototype with 4 slots and one automated gate. 
 
 ## System Overview
 <p align="center">
-<img src="block-diagram.svg" alt="System block diagram" width="650">
+<img src="assets/block-diagram.svg" alt="System block diagram" width="650">
 </p>
 
 ## Components
